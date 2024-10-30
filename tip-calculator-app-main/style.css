@@ -36,7 +36,6 @@ body {
   margin: 3rem auto;
 }
 
-
 section.container {
   background-color: var(--White);
   border-radius: 5% 5% 0 0;
@@ -64,7 +63,6 @@ label {
 label span {
   display: none;
 }
-
 
 label span.empty {
   display: inline;
@@ -183,7 +181,7 @@ article.display-container {
 }
 
 .display-container > div {
-  display: flex;
+  display: grid;
   justify-content: space-between;
   align-items: center;
   margin: 1rem 0px;
@@ -261,7 +259,7 @@ footer {
   button.reset-btn {
     margin-top: 8rem;
   }
-  
+
   button.reset-btn:enabled {
     box-shadow: 0px 5px var(--Light-grayish-cyan-2);
   }

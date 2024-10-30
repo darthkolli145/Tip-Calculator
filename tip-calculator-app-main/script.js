@@ -49,6 +49,24 @@ function calculate() {
     return;
   }
 
+  if (customPercent < 0) {
+    alert("Percentage cannot be negative!");
+    resetBtn();
+    return;
+  }
+
+  if (numPeople < 0) {
+    alert("Number of people cannot be negative!");
+    resetBtn();
+    return;
+  }
+
+  if (billAmount < 0) {
+    alert("Bill amount cannot be negative!");
+    resetBtn();
+    return;
+  }
+
   if (billAmount !== 0 || numPeople !== 0 || percent !== 0) {
     btnReset.removeAttribute("disabled");
   } else {
